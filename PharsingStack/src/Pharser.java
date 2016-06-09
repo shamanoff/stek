@@ -14,23 +14,30 @@ public class Pharser {
 
         }
         String output = "";
+        char a = ')';
+        char b = '}';
+        char c = ']';
         while (!stack.isEmpty()) {
-            char a = ')';
-            char b = '}';
-            char c = ']';
-            switch (a | b | c) {
-                case ')':
-                    System.out.println("попался )");
-                    break;
-                case '}':
-                    System.out.println("попался }");
-                    break;
-                case ']':
-                    System.out.println("попался ]");
-                    break;
-            }
 
-            output = output + stack.pop();
+            char d = stack.pop();
+            if(d!= a){
+                output = output + stack.pop();
+            }
+            if(d==a){System.out.println("попался )");
+            };
+//            switch (b) {
+//                case ')':
+//                    System.out.println("попался )");
+//                    break;
+//                case '}':
+//                    System.out.println("попался }");
+//                    break;
+//                case ']':
+//                    System.out.println("попался ]");
+//                    break;
+//            }
+
+
         }
 
         return output;
