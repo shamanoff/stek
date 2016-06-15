@@ -1,5 +1,6 @@
 package com.company;
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +9,7 @@ public class Main {
 	// write your code here
         Scanner scanner = new Scanner(System.in);
 
-        Invert invert = new Invert(scanner.nextLine());
+        InvertPH invert = new InvertPH(scanner.nextLine());
         System.out.println(invert.invertString());
 
 

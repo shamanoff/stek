@@ -9,7 +9,9 @@ public class MainPharsing {
 //        InvertPH invert = new InvertPH(scanner.nextLine());
 //        System.out.println(invert.invertString());
         Pharser pharser = new Pharser(scanner.nextLine());
-        System.out.println(pharser.PHString());
+        pharser.PHString();
+        pharser.showStack();
+
 
 
     }

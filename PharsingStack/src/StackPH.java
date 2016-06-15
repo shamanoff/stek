@@ -14,7 +14,7 @@ public class StackPH {
         top++;
         stackArray[top]=val;
     }
-    public char pop(){
+    public char pop(char c){
         return stackArray[top--];
     }
     public boolean isEmpty(){
